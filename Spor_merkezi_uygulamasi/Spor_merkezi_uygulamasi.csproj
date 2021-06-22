@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31182678-DAC9-43C6-87BD-F8A4D75EDFC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Spor_merkezi_uygulamasi</RootNamespace>
+    <AssemblyName>Spor_merkezi_uygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminayarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminayarlari.Designer.cs">
+      <DependentUpon>adminayarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="Bilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgi.Designer.cs">
+      <DependentUpon>Bilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ekipmanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ekipmanlar.Designer.cs">
+      <DependentUpon>ekipmanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calisanguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calisanguncelle.Designer.cs">
+      <DependentUpon>Calisanguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelekle.Designer.cs">
+      <DependentUpon>personelekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelgoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelgoruntule.Designer.cs">
+      <DependentUpon>personelgoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelsil.Designer.cs">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiunuttum.Designer.cs">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpormerkeziDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpormerkeziDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpormerkeziDataSon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpormerkeziDataSon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpormerkeziDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpormerkeziDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyeekle.Designer.cs">
+      <DependentUpon>Uyeekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyegoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyegoruntule.Designer.cs">
+      <DependentUpon>Uyegoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyeguncelle.Designer.cs">
+      <DependentUpon>Uyeguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyesil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyesil.Designer.cs">
+      <DependentUpon>Uyesil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminayarlari.resx">
+      <DependentUpon>adminayarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilgi.resx">
+      <DependentUpon>Bilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ekipmanlar.resx">
+      <DependentUpon>ekipmanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calisanguncelle.resx">
+      <DependentUpon>Calisanguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelekle.resx">
+      <DependentUpon>personelekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelgoruntule.resx">
+      <DependentUpon>personelgoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelsil.resx">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiunuttum.resx">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyeekle.resx">
+      <DependentUpon>Uyeekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyegoruntule.resx">
+      <DependentUpon>Uyegoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyeguncelle.resx">
+      <DependentUpon>Uyeguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyesil.resx">
+      <DependentUpon>Uyesil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\sari.png" />
+    <None Include="SpormerkeziDataSet2.xsc">
+      <DependentUpon>SpormerkeziDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SpormerkeziDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpormerkeziDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpormerkeziDataSet2.xss">
+      <DependentUpon>SpormerkeziDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SpormerkeziDataSon.xsc">
+      <DependentUpon>SpormerkeziDataSon.xsd</DependentUpon>
+    </None>
+    <None Include="SpormerkeziDataSon.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpormerkeziDataSon.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpormerkeziDataSon.xss">
+      <DependentUpon>SpormerkeziDataSon.xsd</DependentUpon>
+    </None>
+    <None Include="SpormerkeziDS.xsc">
+      <DependentUpon>SpormerkeziDS.xsd</DependentUpon>
+    </None>
+    <None Include="SpormerkeziDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpormerkeziDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpormerkeziDS.xss">
+      <DependentUpon>SpormerkeziDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sari1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilitt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sarii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addmember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sporicongif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papaya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
